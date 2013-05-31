@@ -88,6 +88,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'suit',
     'django.contrib.admin',
 
     # External apps
@@ -195,3 +196,10 @@ PAYMENT_VARIANTS = {
 CHECKOUT_PAYMENT_CHOICES = [
     ('default', 'Dummy provider')
 ]
+
+
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+    'django.core.context_processors.request',
+)
