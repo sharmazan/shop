@@ -54,7 +54,7 @@ TEMPLATE_LOADERS = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ''
+SECRET_KEY = 'Very_Secret_Passw0rd'
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.common.CommonMiddleware',
